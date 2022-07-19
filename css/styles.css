@@ -1,0 +1,316 @@
+:root {
+    --accent-color: #FF6C00;
+    --text-color:#303030;
+    --primary-color: #FFFFFF;
+    --secondary-color:#555555;
+    --suptitle-primary-color:rgba(157, 164, 189, 0.6);
+    --suptitle-secondary-color:#9DA4BD;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {display: block;}
+
+button {
+    cursor: pointer;
+  }
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+/* ====================COMPONENTS====================*/
+
+.modal-btn {
+    padding: 12px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.modal-btn:hover, 
+.modal-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.media-list-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--text-color)
+}
+
+.media-list-link:hover,
+.media-list-link:focus {
+    color: var(--accent-color);
+}
+
+.suptitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.suptitle-theme-dark {
+    color: var(--suptitle-primary-color);
+}
+
+.suptitle-theme-light {
+    color: var(--text-color);
+}
+
+.section-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--suptitle-secondary-color);
+}
+/* ====================/COMPONENTS====================*/
+
+/* ====================HEADER====================*/
+
+.page-header {
+    padding-top: 32px;
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 71px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.menu-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    /* color: var(--primary-color); */
+} 
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+
+.contact-phone-number {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    /* color: var(--primary-color); */
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.contact-phone-number:hover,
+.contact-phone-number:focus {
+    color: var(--accent-color);
+}
+/* ====================/HEADER====================*/
+
+/*====================HERO====================*/
+
+.main-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    /* color: var(--primary-color) */
+}
+
+/*====================/HERO====================*/
+
+/*====================ABOUT====================*/
+
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--text-color);
+}
+
+.lead {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+}
+
+.desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color)
+
+}
+/*====================/ABOUT====================*/
+
+/*==============SERVICES AND PRICES===============*/
+
+.services-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    /* color: var(--primary-color) */
+}
+
+.table {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--suptitle-secondary-color)
+}
+
+.price {
+    text-align: right;
+}
+/*==============/SERVICES AND PRICES===============*/
+
+/*==================ADVANTAGES====================*/
+
+.amount {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--text-color)
+}
+
+.caption {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: var(--text-color)
+}
+/*==================/ADVANTAGES====================*/
+
+/*====================MASTERS====================*/
+
+.masters-section {
+    background-color: #F7F7F7;
+}
+
+.barber-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.profession {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color)
+}
+/*====================/MASTERS====================*/
+
+/*====================GALLRY====================*/
+
+.gallery-subtitle {
+    margin-bottom: 44px;
+}
+
+/*====================/GALLRY====================*/
+
+/*====================CONTACTS====================*/
+.contacts-section {
+    background-color: #555555;
+}
+
+.contact-list-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--suptitle-secondary-color)
+}
+
+.mail-contact {
+    text-decoration-line: underline;
+}
+/*====================/CONTACTS====================*/
+
+/*====================FOOTER====================*/
+/*====================/FOOTER====================*/
+
+
