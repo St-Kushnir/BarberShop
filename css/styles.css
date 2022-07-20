@@ -193,8 +193,13 @@ body {
     font-size: 42px;
     line-height: 1.17;
     letter-spacing: 0.05em;
-    color: var(--text-color);
 }
+
+.title-theme-light {
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
 
 .lead {
     font-weight: 400;
@@ -209,21 +214,21 @@ body {
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
-    color: var(--secondary-color)
-
+    color: var(--secondary-color);
 }
 /*====================/ABOUT====================*/
 
+.about-list {
+    display: flex;
+}
+
+.about-list-item:not(:nth-last-child(2)) {
+    margin-left: 30px;
+}
+
+
 /*==============SERVICES AND PRICES===============*/
 
-.services-title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
-    /* color: var(--primary-color) */
-}
 
 .table {
     font-weight: 400;
@@ -237,6 +242,11 @@ body {
     text-align: right;
 }
 /*==============/SERVICES AND PRICES===============*/
+
+.title-theme-dark {
+    color: var(--primary-color);
+    margin-bottom: 44px;
+}
 
 /*==================ADVANTAGES====================*/
 
@@ -264,6 +274,31 @@ body {
     background-color: #F7F7F7;
 }
 
+.masters-title {
+    margin-bottom: 44px;
+}
+
+.masters-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.masters-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.masters-list-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
+}
+
+/* .masters-list-item {
+    flex-basis: calc((100%-2*30)/3);
+} */
+.master-card {
+    padding-top: 30px;
+}
+
+
 .barber-name {
     font-weight: 400;
     font-size: 18px;
@@ -271,6 +306,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    margin-bottom: 8px;
 }
 
 .profession {
@@ -285,9 +321,34 @@ body {
 
 /*====================GALLRY====================*/
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 .gallery-subtitle {
     margin-bottom: 44px;
 }
+
+.barber-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* .barber-list-item {
+    flex-basis: calc((100%-3*30)/4);
+} */
+
+
 
 /*====================/GALLRY====================*/
 
